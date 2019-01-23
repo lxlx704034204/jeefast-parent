@@ -4,7 +4,7 @@
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
 <generatorConfiguration>
     <!-- 数据库驱动:选择你的本地硬盘上面的数据库驱动包-->
-    <classPathEntry  location="D:\mysql-connector-java-5.1.20.jar"/>
+    <classPathEntry  location="D:\1work\mysql-connector-java-5.1.20.jar"/>
     <context id="DB2Tables"  targetRuntime="MyBatis3">
         <commentGenerator>
             <property name="suppressDate" value="true"/>
@@ -18,19 +18,19 @@
             <property name="forceBigDecimals" value="false"/>
         </javaTypeResolver>
         <!-- 生成模型的包名和位置-->
-        <javaModelGenerator targetPackage="com.taoding.domain.ticket" targetProject="D:/temp/jeefast/src/main/java2/pojo">
+        <javaModelGenerator targetPackage="cn.generator.pojo" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
             <property name="trimStrings" value="true"/>
         </javaModelGenerator>
         <!-- 生成映射文件的包名和位置mapper.xml-->
-        <sqlMapGenerator targetPackage="com.taoding.mapper.ticket" targetProject="D:/temp/jeefast/src/main/java2/mapperxml">
+        <sqlMapGenerator targetPackage="cn.generator.xml" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </sqlMapGenerator>
         <!-- 生成DAO的包名和位置mapper.dao-->
-        <javaClientGenerator type="XMLMAPPER" targetPackage="com.taoding.mapper.ticket" targetProject="D:/temp/jeefast/src/main/java2/mapperdao">
+        <javaClientGenerator type="XMLMAPPER" targetPackage="cn.generator.dao" targetProject="src/main/java">
             <property name="enableSubPackages" value="true"/>
         </javaClientGenerator>
         <!-- 要生成的表 tableName是数据库中的表名或视图名 domainObjectName是实体类名-->
-        <table tableName="cpa_daily_info" domainObjectName="DailyInfo" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="true"></table>
+        <table tableName="sys_user" domainObjectName="SysUser" enableCountByExample="true" enableUpdateByExample="true" enableDeleteByExample="false" enableSelectByExample="true" selectByExampleQueryId="true"></table>
     </context>
 </generatorConfiguration>
