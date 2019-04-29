@@ -2,7 +2,15 @@
 <!DOCTYPE generatorConfiguration
         PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
         "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
-<!-- command line:  mybatis-generator:generate -e -->
+
+<!--★★★  command line:  mybatis-generator:generate -e
+
+    简化版：https://www.jianshu.com/p/310c299846fc https://github.com/suurqin/spring_mybatis_demo
+
+    -->
+
+
+
 <generatorConfiguration>
     <!--导入属性配置-->
     <!--<properties resource="db.properties"/>-->

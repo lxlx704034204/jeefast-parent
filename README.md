@@ -2,6 +2,13 @@
 已经涵盖了(wisdomOA)：https://gitee.com/liangxinliangxin/renrendiy.git； 
  
 
+mybatis-generator  
+     command line:  mybatis-generator:generate -e   实现根据数据库自动生成代码
+     
+     mysql-connector-java-5.1.20.jar
+
+
+
 ## 平台简介
 JeeFast快速开发平台是基于多个优秀的开源项目，将各个亮点设计融于一体的快速开发平台。平台内置 用户管理、部门管理、角色管理、菜单管理、日志管理、数据源监控、定时任务 等功能。
 
