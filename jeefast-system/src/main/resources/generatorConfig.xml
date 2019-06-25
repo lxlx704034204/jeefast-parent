@@ -17,7 +17,7 @@
 
     <!--指定特定数据库的jdbc驱动jar包的位置-->
     <!--<classPathEntry location="${jdbc.driverLocation}"/>-->
-    <classPathEntry  location="D:\1work\mysql-connector-java-5.1.20.jar"/>
+    <classPathEntry  location="D:\jar\mysql-connector-java-5.1.20.jar"/>
 
     <context id="default" targetRuntime="MyBatis3">
 
@@ -70,9 +70,9 @@
 
         <!-- 需要生成的表名以及实体类命名 -->
         <table tableName="sys_user" domainObjectName="SysUser"
-               enableCountByExample="true" enableUpdateByExample="true"
-               enableDeleteByExample="true" enableSelectByExample="true"
-               selectByExampleQueryId="true">
+               enableCountByExample="false" enableUpdateByExample="false"
+               enableDeleteByExample="false" enableSelectByExample="false"
+               selectByExampleQueryId="false">
         </table>
     </context>
 </generatorConfiguration>
